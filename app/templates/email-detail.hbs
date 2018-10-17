@@ -1,0 +1,13 @@
+<div class="block">
+<img height="50px" onclick={{action "deletePost" model}}
+src="https://3c7lr1o1y191u7cr4ke6ntk3-wpengine.netdna-ssl.com/wp-content/uploads/2015/07/TrashCan.gif" alt="trashcan" />
+
+<h2>{{model.subject}} </h2><br />
+
+FROM: {{model.from}} <br />
+TO: {{model.to}} <br /> <br />
+{{model.message}}
+
+</div>
+
+{{outlet}}

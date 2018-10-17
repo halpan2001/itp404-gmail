@@ -1,0 +1,13 @@
+<div class="block">
+
+  {{#each model as |email|}}
+    <div class = "email-listing">
+      {{#link-to "email-detail" email.id}}
+        <strong> FROM: {{email.from}}</strong> |
+      {{/link-to}}
+      {{email.message}}
+    </div>
+  {{/each}}
+</div>
+
+{{outlet}}

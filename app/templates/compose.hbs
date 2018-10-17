@@ -1,0 +1,17 @@
+<form onsubmit={{action "createPost"}}>
+  <label for="to">To: </label>
+  {{input type="text" id="to" value=to}}
+  <br />
+  <label for="from">From: </label>
+  {{input type="text" id="from" value=from}}
+  <br />
+  <label for="subject">Subject: </label>
+  {{input type="text" id="subject" value=subject}}
+  <br />
+  <label for="message">Message</label>
+  <br />
+  {{textarea rows="8" cols="80" value=message}}
+  <br />
+
+  <button type="submit">Publish</button>
+</form>
