@@ -1,26 +1,47 @@
 .email-listing{
-  width: 100%;
+  width: 1000px;
   height: 30px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
   position: relative;
   float: left;
-  /* border: 1px red solid; */
+  /* background-color: grey;
+  border: 1px red solid; */
+  z-index: 1000;
   padding-top: 10px;
 }
 .block{
   width: 1000px;
   position: relative;
-  float: left;
+  left: 300px;
+  /* background-color: yellow;
+  border: red 1px solid; */
+  z-index: 0;
   /* border: 1px black solid; */
+}
+
+#star-block{
+  width: 1000px;
+  position: relative;
+  left: 300px;
+  /* background-color: yellow;
+  border: red 1px solid; */
+  z-index: 100;
+  /* border: 1px black solid; */
+}
+
+.star{
+  float: left;
 }
 
 #sidebar{
   width: 300px;
   hieght: 1000px;
+  position: absolute;
   float: left;
-  /* border: 1px blue solid; */
+  /* background-color: pink;
+  border: 1px blue solid; */
 }
 body{
   padding: 50px;

@@ -17,6 +17,7 @@ export default function() {
     this.post('/emails');
     this.get('/emails/:id');
     this.put('/emails/:id'); // or this.patch
+    this.patch('/emails/:id');
     this.del('/emails/:id');
 
 /*

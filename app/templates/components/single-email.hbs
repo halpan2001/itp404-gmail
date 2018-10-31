@@ -1,0 +1,11 @@
+<div class = "email-listing">
+  <StarButton
+      @starred={{@email.starred}}
+      @onClick={{action "star" @email}} />
+  {{#link-to "email-detail" @email.id}}
+    <strong> FROM: {{@email.from}}</strong> |
+  {{/link-to}}
+  {{truncate-text @email.message 100}}
+</div>
+
+{{yield}}

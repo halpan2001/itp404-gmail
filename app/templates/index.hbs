@@ -1,12 +1,22 @@
-<div class="block">
-
+<div id="star-block">
+  <div>
+    <h3>Starred</h3>
+  </div>
   {{#each model as |email|}}
-    <div class = "email-listing">
-      {{#link-to "email-detail" email.id}}
-        <strong> FROM: {{email.from}}</strong> |
-      {{/link-to}}
-      {{email.message}}
-    </div>
+  {{#if email.starred}}
+    <SingleEmail @email={{email}} />
+  {{/if}}
+  {{/each}}
+</div>
+
+<div class="block">
+  <div>
+    <h3>Index</h3>
+  </div>
+  {{#each model as |email|}}
+  {{#unless email.starred}}
+    <SingleEmail @email={{email}}/>
+  {{/unless}}
   {{/each}}
 </div>
 
