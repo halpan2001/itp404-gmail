@@ -2,9 +2,9 @@
 <img height=30px src="https://cdn2.iconfinder.com/data/icons/pixel-stars/100/pixel_stars-01-128.png" /> -->
 <div class="star" height=30px float=left onclick={{action "toggle"}}>
   {{#if @starred}}
-      <img height = 20px src="https://art.pixilart.com/d73d4fe729ddef0.gif" />
+      <img data-test="starred" height = 20px src="https://art.pixilart.com/d73d4fe729ddef0.gif" />
     {{else}}
-      <img height=30px src="https://cdn2.iconfinder.com/data/icons/pixel-stars/100/pixel_stars-01-128.png" />
+      <img data-test="unstarred" height=30px src="https://cdn2.iconfinder.com/data/icons/pixel-stars/100/pixel_stars-01-128.png" />
     {{/if}}
 </div>
 {{yield}}

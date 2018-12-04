@@ -4,7 +4,7 @@
   </div>
   {{#each model as |email|}}
   {{#if email.starred}}
-    <SingleEmail @email={{email}} />
+    <SingleEmail @email={{email}} data-test="email"/>
   {{/if}}
   {{/each}}
 </div>
@@ -15,7 +15,7 @@
   </div>
   {{#each model as |email|}}
   {{#unless email.starred}}
-    <SingleEmail @email={{email}}/>
+    <SingleEmail @email={{email}} data-test="email"/>
   {{/unless}}
   {{/each}}
 </div>
